@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="donation1.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./images/hthlogo_md.png" alt="" />
+        <h4>HTH World</h4>
+      </div>
+      <div id="toggleButton">
+        <i id="sun" class="fas fa-sun"></i>
+      </div>
+      <nav>
+        <ul id="navLinks">
+          <li><a href="donation1.html">Home</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Patners</a></li>
+          <li><a href="">HTH Coin</a></li>
+          <li><a href="">Nonprofit Charity</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div id="hthwContainer">
+        <h2>HTHW Donations</h2>
+      </div>
+      <br />
+      <div id="donation">
+        <h2>Contract Information</h2>
+        <p>Contract Address: 0x5F89e9052b94E86eDd05EDb219CbAd40bA4A8B75</p>
+        <br />
+        <p>Owner Address: 0x6bf9c224cfd115484b4d1c22bc92c0c3461c28e1</p>
+      </div>
+      <div class="donate-container">
+        <h3>Donate HTHW</h3>
+        <form id="donationForm" onsubmit="donateEther(); return false;">
+          <input
+            type="number"
+            id="donationAmount"
+            step="0.01"
+            placeholder="Amount (HTHW)"
+            required
+          />
+          <button type="submit">Donate</button>
+        </form>
+      </div>
+      <div id="donations">
+        <h3>Your Donations</h3>
+        <table
+          class="table table-bordered"
+          style="
+            border: 2px solid #debf12;
+
+            margin: 0 auto;
+            width: 90%;
+            color: #fff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+        >
+          <thead>
+            <tr>
+              <th>Address</th>
+              <th id="don">Donation (HTHW)</th>
+            </tr>
+          </thead>
+          <tbody id="donationListTable"></tbody>
+        </table>
+      </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/fileinput.js"></script>
+    <script src="js/chartData.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        setTimeout(function () {
+          $(".succWrap").slideUp("slow");
+        }, 3000);
+      });
+    </script>
+    <script src="donation1.js"></script>
+  </body>
+</html>

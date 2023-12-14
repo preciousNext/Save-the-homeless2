@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leftbar</title>
+    <link rel="stylesheet" href="leftbar1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./images/hthlogo_md.png" alt="" />
+        <h4>HTH World</h4>
+      </div>
+      <div id="toggleButton">
+        <i id="sun" class="fas fa-sun"></i>
+      </div>
+      <nav>
+        <ul id="navLinks">
+          <li><a href="staking.html">Home</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Patners</a></li>
+          <li><a href="">HTH Coin</a></li>
+          <li>
+            <a href="">Nonprofit Charity</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div id="constant">
+        <div id="hold">
+          <h4 class="c1" onclick="showContent('content1')">User</h4>
+          <h4 class="c2" onclick="showContent('content2')">Nonprofit</h4>
+          <h4 class="c3" onclick="showContent('content3')">Web3</h4>
+          <h4 class="c4" onclick="showContent('content4')">Social</h4>
+        </div>
+        <div class="content" id="content1">
+          <ul>
+            <li>
+              <a href="profile.php"><i class="fa fa-user"></i> Profile</a>
+            </li>
+            <li>
+              <a href="profile.php"
+                ><i class="fa fa-dashboard"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="feedback.php"><i class="fa fa-envelope"></i> Feedback</a>
+            </li>
+          </ul>
+        </div>
+        <div class="content" id="content2">
+          <ul>
+            <li>
+              <a href="index.php"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="employers-landing.php"
+                ><i class="fa fa-user"></i> Employers</a
+              >
+            </li>
+            <li>
+              <a href="employees-landing.php"
+                ><i class="fa fa-user"></i> Employees</a
+              >
+            </li>
+            <li>
+              <a href="homelessList.php"
+                ><i class="fa fa-user"></i> Homeless List</a
+              >
+            </li>
+            <li>
+              <a href="sponsorList.php"
+                ><i class="fa fa-user"></i> Sponsors List</a
+              >
+            </li>
+            <li>
+              <a href="transactions.php"
+                ><i class="fa fa-user"></i> Donors List</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="content" id="content3">
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-dollar"></i> Donate</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-dollar"></i> Wallet</a>
+            </li>
+          </ul>
+        </div>
+        <div class="content" id="content4">
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-bolt"></i> Quests</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-user"></i> Users</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="./leftbar1.js"></script>
+  </body>
+</html>

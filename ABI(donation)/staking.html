@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="staking.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./images/hthlogo_md.png" alt="" />
+        <h4>HTH World</h4>
+      </div>
+
+      <nav>
+        <ul id="navLinks">
+          <li><a href="">Home</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Patners</a></li>
+          <li><a href="">HTH Coin</a></li>
+          <li>
+            <button><a href="">Nonprofit Charity</a></button>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="inm">
+        <form action="" id="stakeTokensForm">
+          <div id="wrap">
+            <h2>Stake Tokens</h2>
+          </div>
+          <br />
+          <div id="stakeC">
+            <label for="stakeAmount">Stake Amount (HTHS): </label>
+            <br />
+            <input
+              type="number"
+              step="0.01"
+              id="stakeAmount"
+              placeholder=" Enter a valid amount "
+              required
+            />
+          </div>
+          <br />
+          <br />
+          <div id="stakeD">
+            <label for="lockTime">Lock Time (seconds):</label>
+            <br />
+            <input
+              type="number"
+              id="lockTime"
+              name="lockTime"
+              required
+              placeholder=" Enter a valid digit"
+            />
+            <br />
+          </div>
+          <button type="button" id="stake">Stake</button>
+        </form>
+        <div id="wrap">
+          <h2>Unstake Tokens</h2>
+        </div>
+        <button type="button" id="unstake">Unstake</button>
+      </div>
+    </section>
+
+    <!-- <div id="walletInfo" style="display: none">
+      <p>Wallet Address: <span id="walletAddress"></span></p>
+      <p>Balance: <br /><span id="balance"></span> HTHW</p>
+    </div>
+    <h2>Stake Tokens</h2>
+    <form id="stakeTokensForm">
+      <label for="stakeAmount">Stake Amount (HTHS):</label>
+      <input
+        type="number"
+        step="0.01"
+        id="stakeAmount"
+        name="stakeAmount"
+        required
+      /><br />
+      <label for="lockTime">Lock Time (seconds):</label>
+      <input type="number" id="lockTime" name="lockTime" required /><br />
+      <button type="button" id="stake">Stake</button>
+    </form>
+    <h2>Unstake Tokens</h2>
+    <button type="button" id="unstake">Unstake</button> -->
+
+    <script src="./staking.js"></script>
+  </body>
+</html>
